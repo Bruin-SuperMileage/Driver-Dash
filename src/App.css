@@ -1,0 +1,106 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #ff0000;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.car-image {
+  height: 170px;
+}
+
+.card-content {
+  padding: 18px;
+}
+
+.subtitle.is-6 {
+  margin-top: 0px;
+  margin-bottom: 4px;
+  color: rgb(255, 255, 255);
+}
+
+/* .canvas{
+  background-image: radial-gradient(black, #30343A);
+  /* background-color: hsl(0, 0%, 21%); */
+  /* background-color: #30343A;
+}*/
+
+/* .color-dark {
+  background-color: transparent !important;
+} */
+
+/* .card {
+  background-color: transparent;
+  box-shadow: 0 5px 10px #282c34, 0 0 0 1px #282c34;
+} */
+
+.title {
+  color: white;
+}
+
+.speed {
+  color: white;
+  font-size: 20em;
+}
+
+.km {
+  font-size: 7em;
+}
+
+.lap {
+  font-size: 1.8em;
+  color:white;
+  margin-top: auto;
+}
+
+body {
+  height: 110%;
+  overflow: hidden;
+  overflow-y: hidden;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+html {
+  background: #545455;
+}
+
+.column {
+  overflow-y: hidden;
+  padding-bottom: 6px;
+}
+
+.chartjs-render-monitor {
+  max-height: 300px;
+}
+
+.control-button {
+  width: 70px;
+}
+
