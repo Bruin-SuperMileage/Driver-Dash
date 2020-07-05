@@ -9,6 +9,7 @@ import './App.css';
 import Speed from './components/speed';
 import Time from './components/time'
 import Lap from './components/lap'
+import Speedometer from './components/speedometer'
 
 class App extends React.Component {
   constructor(props){
@@ -20,14 +21,10 @@ class App extends React.Component {
       latestData: {},
       battery: {},
       driver: {},            
-      gps: {},
-      joulemeter: {},
       lap: {},
-      motor: {},
       speed: {},
+      speedometer: {},
       time: {},
-      track: {},
-      weather: {},
     };
   }
 
@@ -49,14 +46,12 @@ class App extends React.Component {
           latestData1 = snapshot.val();
           var speed = latestData1["speed"];
           var lap = latestData1["lap"];
-/*           var latestData1 = {};
-          latestData1 = snapshot.val();
-          var speed = 0
-          var weather = 0 */
+          var speedometer = latestData1["speed"];
 
           this.setState({
             latestData: latestData1,
             speed: speed,
+            speedometer: speed,
             lap: lap,
           })
         });
@@ -79,8 +74,9 @@ class App extends React.Component {
           <div class="column">   
             <Speed speed={this.state.speed} />
           </div>
-          <div class="column lap">
+          <div class="column">
             {/* <Time time={this.state.time} /> */}
+            <Speedometer speedometer={this.state.speed}/>
             <Lap lap={this.state.lap} />  
           </div>
         </div>

@@ -22,7 +22,7 @@ while (True):
   now = 0
   current_time = 0
   timeName = 0
-
+  
   lapNumber = db.child("Lap").get() #fetch lap number
   lapNumber = lapNumber.val()
   lapRunning = db.child("Running").get() #fetch running state
@@ -80,7 +80,7 @@ while (True):
     "acceleration z": random.randint(0,255),
     "avg": random.randint(0,255),
     "rpm": random.randint(0,255),
-    "speed": random.randint(0,255),
+    "speed": random.randint(0,70),
     "throttle": random.randint(0,255)})
 
   db.child(trialName).child(timeName).child("track").update(
