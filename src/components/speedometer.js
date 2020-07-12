@@ -11,16 +11,17 @@ class Speedometer extends React.Component{
                     maxValue={70}
                     needleHeightRatio={0.8}
                     maxSegmentLabels={8}
-                    seg
                     segments={5555}
                     value={this.props.speedometer.speed}
                     textColor={"white"}
-                    width={800}
+                    width={1000}
                     height={450}
                     needleTransition={"easePolyIn"}
                     ringWidth={120}
                     paddingVertical={150}
                     valueTextFontSize={0}
+                    labelFontSize={50}
+                    paddingHorizontal={100}
                 />
                </div>
           </div>

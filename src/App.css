@@ -70,12 +70,16 @@
   font-size: 30em;
 }
 
+.big {
+  line-height:1;
+}
+
 .km {
   font-size: 8em;
 }
 
 .lap {
-  font-size: 1.8em;
+  font-size: 5em;
   color:white;
   margin-top: auto;
 }
