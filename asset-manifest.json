@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/dashboard/static/css/main.f738a556.chunk.css",
-    "main.js": "/dashboard/static/js/main.4a7d88b4.chunk.js",
-    "main.js.map": "/dashboard/static/js/main.4a7d88b4.chunk.js.map",
-    "runtime-main.js": "/dashboard/static/js/runtime-main.4e4eede7.js",
-    "runtime-main.js.map": "/dashboard/static/js/runtime-main.4e4eede7.js.map",
-    "static/js/2.ce1ad685.chunk.js": "/dashboard/static/js/2.ce1ad685.chunk.js",
-    "static/js/2.ce1ad685.chunk.js.map": "/dashboard/static/js/2.ce1ad685.chunk.js.map",
-    "index.html": "/dashboard/index.html",
-    "precache-manifest.904124b72481537766d098220a8ccad6.js": "/dashboard/precache-manifest.904124b72481537766d098220a8ccad6.js",
-    "service-worker.js": "/dashboard/service-worker.js",
-    "static/css/main.f738a556.chunk.css.map": "/dashboard/static/css/main.f738a556.chunk.css.map",
-    "static/js/2.ce1ad685.chunk.js.LICENSE.txt": "/dashboard/static/js/2.ce1ad685.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/dashboard/static/media/dark-paths.7d917551.png"
+    "main.css": "/Driver-Dash/static/css/main.077542da.chunk.css",
+    "main.js": "/Driver-Dash/static/js/main.34d2065e.chunk.js",
+    "main.js.map": "/Driver-Dash/static/js/main.34d2065e.chunk.js.map",
+    "runtime-main.js": "/Driver-Dash/static/js/runtime-main.8f8a87fe.js",
+    "runtime-main.js.map": "/Driver-Dash/static/js/runtime-main.8f8a87fe.js.map",
+    "static/js/2.d68501e6.chunk.js": "/Driver-Dash/static/js/2.d68501e6.chunk.js",
+    "static/js/2.d68501e6.chunk.js.map": "/Driver-Dash/static/js/2.d68501e6.chunk.js.map",
+    "index.html": "/Driver-Dash/index.html",
+    "precache-manifest.208e8042d1558dd9993fefb0bf4f9ada.js": "/Driver-Dash/precache-manifest.208e8042d1558dd9993fefb0bf4f9ada.js",
+    "service-worker.js": "/Driver-Dash/service-worker.js",
+    "static/css/main.077542da.chunk.css.map": "/Driver-Dash/static/css/main.077542da.chunk.css.map",
+    "static/js/2.d68501e6.chunk.js.LICENSE.txt": "/Driver-Dash/static/js/2.d68501e6.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/Driver-Dash/static/media/dark-paths.7d917551.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.4e4eede7.js",
-    "static/js/2.ce1ad685.chunk.js",
-    "static/css/main.f738a556.chunk.css",
-    "static/js/main.4a7d88b4.chunk.js"
+    "static/js/runtime-main.8f8a87fe.js",
+    "static/js/2.d68501e6.chunk.js",
+    "static/css/main.077542da.chunk.css",
+    "static/js/main.34d2065e.chunk.js"
   ]
 }
