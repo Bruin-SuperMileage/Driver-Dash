@@ -92,7 +92,8 @@ body {
 }
 
 html {
-  background: #545455;
+  /* background-image: url(background/woven/woven_@2X.png); */
+  background-image: url(background/dark-paths/dark-paths.png);
 }
 
 .column {

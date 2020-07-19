@@ -70,14 +70,14 @@ class App extends React.Component {
   render() {
     return (
       <div class="canvas color-dark" style={{paddingTop: '45px'}}>
-        <div class="columns">
+        <div class="columns is-vcentered">
           <div class="column is-one-third">   
             <Speed speed={this.state.speed} />
-            <Lap lap={this.state.lap} /> 
           </div>
           <div class="column ">
             {/* <Time time={this.state.time} /> */}
-            <Speedometer speedometer={this.state.speed}/> 
+            <Speedometer speedometer={this.state.speed}/>
+            <Lap lap={this.state.lap} />  
           </div>
         </div>
       </div>
