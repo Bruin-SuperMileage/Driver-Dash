@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a9d4c5d8da68dc2cbb225933f79e4f38",
+    "revision": "bdcf3575eb7e4a06afd4ea9f8d531959",
     "url": "/Driver-Dash/index.html"
   },
   {
-    "revision": "a06863a63158a2710517",
-    "url": "/Driver-Dash/static/css/main.9147ec02.chunk.css"
+    "revision": "6042a386d37589aae8bb",
+    "url": "/Driver-Dash/static/css/main.dc1e3dca.chunk.css"
   },
   {
     "revision": "fe751492ab77ea1c8ae3",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Driver-Dash/static/js/2.d68501e6.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a06863a63158a2710517",
+    "revision": "6042a386d37589aae8bb",
     "url": "/Driver-Dash/static/js/main.34d2065e.chunk.js"
   },
   {
