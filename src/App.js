@@ -7,9 +7,21 @@ import './App.css';
 // http://jerairrest.github.io/react-chartjs-2/
 
 import Speed from './components/speed';
-import Time from './components/time'
 import Lap from './components/lap'
 import Speedometer from './components/speedometer'
+
+function launchFullScreen(element) {
+  if(element.requestFullScreen) {
+    element.requestFullScreen();
+  } else if(element.mozRequestFullScreen) {
+    element.mozRequestFullScreen();
+  } else if(element.webkitRequestFullScreen) {
+    element.webkitRequestFullScreen();
+  }
+}
+
+// Launch fullscreen for browsers that support it!
+launchFullScreen(document.documentElement); // the whole page
 
 class App extends React.Component {
   constructor(props){
@@ -19,12 +31,9 @@ class App extends React.Component {
       latestTime: '',
       latestTrial: '',
       latestData: {},
-      battery: {},
-      driver: {},            
       lap: {},
       speed: {},
       speedometer: {},
-      time: {},
     };
   }
 
@@ -34,11 +43,9 @@ class App extends React.Component {
     //sets the time
     database.ref("Latest Time").on('value', (snapshot) => {
       var latestTime1 = snapshot.val();
-      { console.log(latestTime1) }
       //sets the trial
       database.ref("Latest Trial").on('value', (snapshot) => {
         var latestTrial1 = snapshot.val();
-        { console.log(latestTrial1) }
 
         //sets the data
         database.ref(latestTrial1).child(latestTime1).on('value', (snapshot) => {
@@ -46,7 +53,6 @@ class App extends React.Component {
           latestData1 = snapshot.val();
           var speed = latestData1["speed"];
           var lap = latestData1["lap"];
-          var speedometer = latestData1["speed"];
 
           this.setState({
             latestData: latestData1,
@@ -69,13 +75,12 @@ class App extends React.Component {
   
   render() {
     return (
-      <div class="canvas color-dark" style={{paddingTop: '45px'}}>
-        <div class="columns is-vcentered">
-          <div class="column is-one-third">   
+      <div className="canvas color-dark" style={{paddingTop: '45px'}}>
+        <div className="columns is-vcentered">
+          <div className="column is-one-third">   
             <Speed speed={this.state.speed} />
           </div>
-          <div class="column ">
-            {/* <Time time={this.state.time} /> */}
+          <div className="column ">
             <Speedometer speedometer={this.state.speed}/>
             <Lap lap={this.state.lap} />  
           </div>

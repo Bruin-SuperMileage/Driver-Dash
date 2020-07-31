@@ -67,7 +67,7 @@ while (True):
     "remaining": random.randint(0,255),
     "slowest": random.randint(0,255),
     "total": random.randint(0,255),
-    "running": random.randint(0,255)})
+    "running": "True"})
 
   db.child(trialName).child(timeName).child("motor").update(
     {"bhp": random.randint(0,255),

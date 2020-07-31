@@ -46,21 +46,6 @@
   color: rgb(255, 255, 255);
 }
 
-/* .canvas{
-  background-image: radial-gradient(black, #30343A);
-  /* background-color: hsl(0, 0%, 21%); */
-  /* background-color: #30343A;
-}*/
-
-/* .color-dark {
-  background-color: transparent !important;
-} */
-
-/* .card {
-  background-color: transparent;
-  box-shadow: 0 5px 10px #282c34, 0 0 0 1px #282c34;
-} */
-
 .title {
   color: white;
 }
@@ -79,21 +64,20 @@
 }
 
 .lap {
-  font-size: 5em;
+  font-size: 800%;
   color:white;
   margin-top: auto;
 }
 
 body {
   height: 110%;
-  overflow: hidden;
-  overflow-y: hidden;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 html {
   /* background-image: url(background/woven/woven_@2X.png); */
   background-image: url(background/dark-paths/dark-paths.png);
+  overflow: hidden;
 }
 
 .column {
