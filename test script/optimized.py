@@ -55,5 +55,5 @@ while (True):
 
   db.child(trialName).child(timeName).child("lap").update(
     {"current": lap,
-  time.sleep(1)
     "running": running})
+  time.sleep(1)

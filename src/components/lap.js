@@ -97,13 +97,23 @@ class Lap extends React.Component{
     const { timerTime } = this.state;
     let centiseconds = ("0" + (Math.floor(timerTime / 10) % 100)).slice(-2);
     let seconds = ("0" + (Math.floor(timerTime / 1000) % 60)).slice(-2);
-    let minutes = ("0" + (Math.floor(timerTime / 60000) % 60)).slice(-2);    
+    let minutes = ("0" + (Math.floor(timerTime / 60000) % 60)).slice(-2);
+    const fourptthree = 260000 - timerTime;
+    let fourptthreecentiseconds = ("0" + (Math.floor(fourptthree / 10) % 100)).slice(-2);
+    let fourptthreeseconds = ("0" + (Math.floor(fourptthree / 1000) % 60)).slice(-2);
+    let fourptthreeminutes = ("0" + (Math.floor(fourptthree / 60000) % 60)).slice(-2);
     return (
       <div>
         <div className="lap">
-            <div className="card-content">
-                <p className="has-text-centered">Lap {this.props.lap["current"]}</p>
-                <p className="has-text-centered">{minutes} : {seconds} : {centiseconds}</p>
+            <div className="card-content columns">
+                <div className="column">
+                  <p>Lap {this.props.lap["current"]}</p>
+                  <p>Remaining</p>
+                </div>
+                <div className="column">
+                  <p>{minutes} : {seconds} : {centiseconds}</p>
+                  <p>{fourptthreeminutes} : {fourptthreeseconds} : {fourptthreecentiseconds}</p>
+                </div>
             </div>
         </div>
       </div>
