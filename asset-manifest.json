@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/Driver-Dash/static/css/main.8bbc197d.chunk.css",
-    "main.js": "/Driver-Dash/static/js/main.cba07151.chunk.js",
-    "main.js.map": "/Driver-Dash/static/js/main.cba07151.chunk.js.map",
+    "main.css": "/Driver-Dash/static/css/main.debbd107.chunk.css",
+    "main.js": "/Driver-Dash/static/js/main.5fb115e6.chunk.js",
+    "main.js.map": "/Driver-Dash/static/js/main.5fb115e6.chunk.js.map",
     "runtime-main.js": "/Driver-Dash/static/js/runtime-main.8f8a87fe.js",
     "runtime-main.js.map": "/Driver-Dash/static/js/runtime-main.8f8a87fe.js.map",
-    "static/js/2.07a162ee.chunk.js": "/Driver-Dash/static/js/2.07a162ee.chunk.js",
-    "static/js/2.07a162ee.chunk.js.map": "/Driver-Dash/static/js/2.07a162ee.chunk.js.map",
+    "static/js/2.e8504927.chunk.js": "/Driver-Dash/static/js/2.e8504927.chunk.js",
+    "static/js/2.e8504927.chunk.js.map": "/Driver-Dash/static/js/2.e8504927.chunk.js.map",
     "index.html": "/Driver-Dash/index.html",
-    "precache-manifest.6aa38958e385de62699f3758793df4c2.js": "/Driver-Dash/precache-manifest.6aa38958e385de62699f3758793df4c2.js",
+    "precache-manifest.5934354cf353d2dca60b835a8fbc3bfa.js": "/Driver-Dash/precache-manifest.5934354cf353d2dca60b835a8fbc3bfa.js",
     "service-worker.js": "/Driver-Dash/service-worker.js",
-    "static/css/main.8bbc197d.chunk.css.map": "/Driver-Dash/static/css/main.8bbc197d.chunk.css.map",
-    "static/js/2.07a162ee.chunk.js.LICENSE.txt": "/Driver-Dash/static/js/2.07a162ee.chunk.js.LICENSE.txt",
+    "static/css/main.debbd107.chunk.css.map": "/Driver-Dash/static/css/main.debbd107.chunk.css.map",
+    "static/js/2.e8504927.chunk.js.LICENSE.txt": "/Driver-Dash/static/js/2.e8504927.chunk.js.LICENSE.txt",
     "static/media/App.css": "/Driver-Dash/static/media/dark-paths.7d917551.png"
   },
   "entrypoints": [
     "static/js/runtime-main.8f8a87fe.js",
-    "static/js/2.07a162ee.chunk.js",
-    "static/css/main.8bbc197d.chunk.css",
-    "static/js/main.cba07151.chunk.js"
+    "static/js/2.e8504927.chunk.js",
+    "static/css/main.debbd107.chunk.css",
+    "static/js/main.5fb115e6.chunk.js"
   ]
 }
