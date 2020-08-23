@@ -20,7 +20,8 @@ class Lap extends React.Component{
     this.setState({
       timerOn: true,
       timerTime: this.state.timerTime,
-      timerStart: Date.now() - this.state.timerTime
+      timerStart: Date.now() - this.state.timerTime,
+      isRunning: "True"
     });
     this.timer = setInterval(() => {
       this.setState({
@@ -30,7 +31,10 @@ class Lap extends React.Component{
   };
 
   stopTimer = () => {
-    this.setState({ timerOn: false });
+    this.setState({ 
+      timerOn: false,
+      isRunning: "False"
+     });
     clearInterval(this.timer);
   };
 
@@ -42,19 +46,13 @@ class Lap extends React.Component{
   };
 
   componentDidMount = () => {
-    if (this.props.lap["running"] === "True") {
-      if (this.props.lap["running"] === "True") {
+    if (this.props.lap["Running"] === "True") {
+      if (this.props.lap["Running"] === "True") {
         this.resetTimer();
         this.startTimer();
-        this.setState({
-          isRunning: "True"
-        })
       }
-      else if (this.props.lap["running"] === "False") {
+      else if (this.props.lap["Running"] === "False") {
         this.stopTimer();
-        this.setState({
-          isRunning: "False"
-        })
       }
     }
 
@@ -62,34 +60,26 @@ class Lap extends React.Component{
 
   componentDidUpdate = () => {
     const {isRunning, lapNumber } = this.state;
-    if (isRunning !== this.props.lap["running"]) {
-      if (this.props.lap["running"] === "True") {
-        console.log("Starting start")
-        this.resetTimer();
+    if (isRunning !== this.props.lap["Running"]) {
+      if (this.props.lap["Running"] === "True") {
         this.startTimer();
+        this.resetTimer();
         this.setState({
           isRunning: "True"
         })
       }
-      else if (this.props.lap["running"] === "False") {
-        console.log("Ending end");
+      else if (this.props.lap["Running"] === "False") {
         this.stopTimer();
         this.setState({
           isRunning: "False"
         })
       }
     }
-    console.log("state: " + lapNumber)
-    console.log("current: " + this.props.lap["current"])
-    if (lapNumber !== this.props.lap["current"]) {
-      console.log("lapNumber")
-      //this.stopTimer();
+    if (lapNumber !== this.props.lap["Lap"]) {
       this.resetTimer();
-      //this.startTimer();
       this.setState({
-        lapNumber: this.props.lap["current"]
+        lapNumber: this.props.lap["Lap"]
       })
-      console.log("setState")
     }
   }
 
@@ -107,7 +97,7 @@ class Lap extends React.Component{
         <div className="lap">
             <div className="card-content columns">
                 <div className="column">
-                  <p>Lap {this.props.lap["current"]}</p>
+                  <p>Lap {this.props.lap["Lap"]}</p>
                   <p>Remaining</p>
                 </div>
                 <div className="column">

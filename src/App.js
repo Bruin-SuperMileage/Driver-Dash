@@ -28,6 +28,7 @@ class App extends React.Component {
     super(props);
 
     this.state = {
+      all: {},
       latestTime: '',
       latestTrial: '',
       latestData: {},
@@ -39,6 +40,13 @@ class App extends React.Component {
 
   componentDidMount() {
     let database = firebase.database();
+
+    database.ref().on('value', (snapshot) => {
+      var all = snapshot.val();
+      this.setState({
+        all: all
+      })
+    });
 
     //sets the time
     database.ref("Latest Time").on('value', (snapshot) => {
@@ -82,7 +90,7 @@ class App extends React.Component {
           </div>
           <div className="column ">
             <Speedometer speedometer={this.state.speed}/>
-            <Lap lap={this.state.lap} />  
+            <Lap lap={this.state.all} />  
           </div>
         </div>
       </div>

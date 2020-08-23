@@ -48,7 +48,8 @@ while (True):
     
   db.update(
     {"Latest Trial": "97820",
-    "Latest Time": 0})
+    "Latest Time": 0, 
+    "Total": 0})
 
   db.child(trialName).child(timeName).child("speed").update(
     {"speed": speed})
