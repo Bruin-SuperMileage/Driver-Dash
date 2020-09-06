@@ -7,9 +7,9 @@ import firebase from 'firebase';
 var config = {
   // apiKey: "AIzaSyAnFTWZTgWEugKOSUM6WY_NkxrPzRzn6dU",
   apiKey: apiKeyHidden,
-  authDomain: "bruin-racing.firebaseapp.com",
-  databaseURL: "https://bruin-racing.firebaseio.com",
-  projectId: "bruin-racing",
+  authDomain: "smv-daq.firebaseapp.com",
+  databaseURL: "https://smv-daq.firebaseio.com",
+  projectId: "smv-daq",
   storageBucket: "bucket.appspot.com"
 };
 

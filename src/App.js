@@ -29,8 +29,8 @@ class App extends React.Component {
 
     this.state = {
       all: {},
-      latestTime: '',
-      latestTrial: '',
+      // latestTime: '',
+      // latestTrial: '',
       latestData: {},
       lap: {},
       speed: {},
@@ -40,44 +40,46 @@ class App extends React.Component {
 
   componentDidMount() {
     let database = firebase.database();
-
     database.ref().on('value', (snapshot) => {
-      var all = snapshot.val();
+      let all = snapshot.val();
       this.setState({
         all: all
       })
     });
-
-    //sets the time
-    database.ref("Latest Time").on('value', (snapshot) => {
-      var latestTime1 = snapshot.val();
-      //sets the trial
+    database.ref("Previous Time").on('value', (snapshot) => {
+      //console.log("Run");
+      let latestTime1 = snapshot.val();
       database.ref("Latest Trial").on('value', (snapshot) => {
-        var latestTrial1 = snapshot.val();
-
-        //sets the data
+        let latestTrial1 = snapshot.val();
         database.ref(latestTrial1).child(latestTime1).on('value', (snapshot) => {
-          var latestData1 = {};
-          latestData1 = snapshot.val();
-          var speed = latestData1["speed"];
-          var lap = latestData1["lap"];
-
+          //console.log(latestTrial1 + " " + latestTime1)
+          let latestData1 = {};
+          let exists = snapshot.exists();
+          let speed;
+          if (exists === true) {
+            console.log("if")
+            latestData1 = snapshot.val();
+            speed = latestData1["hall-effect"];
+          }
+          else {
+            console.log("else")
+            speed = 0;
+          }
           this.setState({
             latestData: latestData1,
             speed: speed,
             speedometer: speed,
-            lap: lap,
           })
         });
         
-        this.setState({
-          latestTrial: latestTrial1
-        })
+        // this.setState({
+        //   latestTrial: latestTrial1
+        // })
       });
 
-      this.setState({
-        latestTime: latestTime1
-      })
+      // this.setState({
+      //   latestTime: latestTime1
+      // })
     });
   }
   

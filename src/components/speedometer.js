@@ -19,8 +19,8 @@ class Speedometer extends React.Component{
                     needleTransition={"easePolyIn"}
                     ringWidth={120}
                     paddingVertical={150}
-                    valueTextFontSize={0}
-                    labelFontSize={50}
+                    valueTextFontSize={'0'}
+                    labelFontSize={'50'}
                     paddingHorizontal={100}
                 />
                </div>
