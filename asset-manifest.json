@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Driver-Dash/static/css/main.debbd107.chunk.css",
-    "main.js": "/Driver-Dash/static/js/main.953bce71.chunk.js",
-    "main.js.map": "/Driver-Dash/static/js/main.953bce71.chunk.js.map",
+    "main.js": "/Driver-Dash/static/js/main.8022dbad.chunk.js",
+    "main.js.map": "/Driver-Dash/static/js/main.8022dbad.chunk.js.map",
     "runtime-main.js": "/Driver-Dash/static/js/runtime-main.8f8a87fe.js",
     "runtime-main.js.map": "/Driver-Dash/static/js/runtime-main.8f8a87fe.js.map",
     "static/js/2.e8504927.chunk.js": "/Driver-Dash/static/js/2.e8504927.chunk.js",
     "static/js/2.e8504927.chunk.js.map": "/Driver-Dash/static/js/2.e8504927.chunk.js.map",
     "index.html": "/Driver-Dash/index.html",
-    "precache-manifest.04c84a410da2a56896da3fd11b594cfd.js": "/Driver-Dash/precache-manifest.04c84a410da2a56896da3fd11b594cfd.js",
+    "precache-manifest.446668fb93959b795818a95110e0c4b8.js": "/Driver-Dash/precache-manifest.446668fb93959b795818a95110e0c4b8.js",
     "service-worker.js": "/Driver-Dash/service-worker.js",
     "static/css/main.debbd107.chunk.css.map": "/Driver-Dash/static/css/main.debbd107.chunk.css.map",
     "static/js/2.e8504927.chunk.js.LICENSE.txt": "/Driver-Dash/static/js/2.e8504927.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.8f8a87fe.js",
     "static/js/2.e8504927.chunk.js",
     "static/css/main.debbd107.chunk.css",
-    "static/js/main.953bce71.chunk.js"
+    "static/js/main.8022dbad.chunk.js"
   ]
 }
