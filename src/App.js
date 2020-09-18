@@ -46,7 +46,7 @@ class App extends React.Component {
         all: all
       })
     });
-    database.ref("Previous Time").on('value', (snapshot) => {
+    database.ref("Latest Time").on('value', (snapshot) => {
       //console.log("Run");
       let latestTime1 = snapshot.val();
       database.ref("Latest Trial").on('value', (snapshot) => {

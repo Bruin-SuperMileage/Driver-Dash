@@ -46,12 +46,12 @@ class Lap extends React.Component{
   };
 
   componentDidMount = () => {
-    if (this.props.lap["Running"] === "True") {
-      if (this.props.lap["Running"] === "True") {
+    if (this.props.lap["drivingLap"] === "True") {
+      if (this.props.lap["drivingLap"] === "True") {
         this.resetTimer();
         this.startTimer();
       }
-      else if (this.props.lap["Running"] === "False") {
+      else if (this.props.lap["drivingLap"] === "False") {
         this.stopTimer();
       }
     }
@@ -60,15 +60,15 @@ class Lap extends React.Component{
 
   componentDidUpdate = () => {
     const {isRunning, lapNumber } = this.state;
-    if (isRunning !== this.props.lap["Running"]) {
-      if (this.props.lap["Running"] === "True") {
+    if (isRunning !== this.props.lap["drivingLap"]) {
+      if (this.props.lap["drivingLap"] === "True") {
         this.startTimer();
         this.resetTimer();
         this.setState({
           isRunning: "True"
         })
       }
-      else if (this.props.lap["Running"] === "False") {
+      else if (this.props.lap["drivingLap"] === "False") {
         this.stopTimer();
         this.setState({
           isRunning: "False"

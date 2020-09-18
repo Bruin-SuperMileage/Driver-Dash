@@ -92,11 +92,6 @@ while (True):
   my_dict['MaZ'] = random.randrange(0,70,4)
   my_dict['MaY'] = random.randrange(0,70,4)
   
-  db.update(
-  {"Latest Trial": trialName,
-  "Latest Time": timeName, 
-  "Previous Time": previousTime})
-  
   db.child(trialName).child(timeName).update({
   "gps": 
       {"lat": my_dict['Lat'],
@@ -105,13 +100,13 @@ while (True):
       {"current": my_dict['Cur'],
       "power": my_dict['Pwr'],
       "voltage": my_dict['Vlt']},
-  "IMU":
-      {"MagX": my_dict['GyX'],
-      "MagY": my_dict['GyY'],
-      "MagZ": my_dict['GyZ'],
-      "Heading": my_dict['Hea'],
-      "Pitch": my_dict['Pit'],
-      "Roll": my_dict['Rol']},
+  "gyroscope":
+      {"GyX": my_dict['GyX'],
+      "GyY": my_dict['GyY'],
+      "GyZ": my_dict['GyZ'],
+      "heading": my_dict['Hea'],
+      "pitch": my_dict['Pit'],
+      "roll": my_dict['Rol']},
   "environment":
       {"altitude": my_dict['Alt'],
       "temperature": my_dict['Tem']},
@@ -126,18 +121,27 @@ while (True):
   "magnetometer":
       {"MagX": my_dict['MaX'],
       "MagY": my_dict['MaY'],
-      "MagZ": my_dict['MaZ']},
-  "driver":
-      {"image": "./images/Caroline.jpg",
-      "message": "I Believe In You!!!",
-      "name": "Caroline",
-      "phone": "999-999-999",
-      "social": "@CarolineDriver"},
-  "track":
-      {"name": "Parking Garage",
-      "trial": num,
-      "temp": random.randint(0,255)},
+      "MagZ": my_dict['MaZ']}
+  # "driver":
+      # {"image": "./images/Caroline.jpg",
+      # "message": "I Believe In You!!!",
+      # "name": "Caroline",
+      # "phone": "999-999-999",
+      # "social": "@CarolineDriver"},
+  # "track":
+      # {"name": "Parking Garage",
+      # "trial": num,
+      # "temp": random.randint(0,255)},
   })
+  
+  db.update(
+  {"Latest Trial": trialName,
+  "Latest Time": timeName})
+  
+  # db.update(
+  # {"Latest Trial": trialName,
+  # "Latest Time": timeName, 
+  # "Previous Time": previousTime})
   
   # sleep(3)
   # n += 1
